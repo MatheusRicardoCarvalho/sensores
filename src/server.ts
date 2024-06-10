@@ -35,7 +35,7 @@ app.get('/sensor/clima', async (request, replay) => {
     return { climates }
 });
 
-app.post('sensor/clima', async (request, replay) => {
+app.post('/sensor/clima', async (request, replay) => {
     const createClimateSchema = z.object({
         sensor: z.string(),
         temperatura: z.string(),
@@ -57,7 +57,7 @@ app.post('sensor/clima', async (request, replay) => {
 
 app.listen({
     host: "0.0.0.0",
-    port: process.env.PORT ? Number(process.env.PORT) : 3333,
+    port: process.env.PORT ? Number(process.env.PORT) : 80,
 }).then(() => {
     console.log("Servidor HTTP Rodando");
 });

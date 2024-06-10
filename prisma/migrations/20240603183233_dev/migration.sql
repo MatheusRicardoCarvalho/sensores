@@ -1,12 +1,3 @@
-/*
-  Warnings:
-
-  - You are about to drop the `Sensor` table. If the table is not empty, all the data it contains will be lost.
-
-*/
--- DropTable
-DROP TABLE "Sensor";
-
 -- CreateTable
 CREATE TABLE "Flow" (
     "id" TEXT NOT NULL,
